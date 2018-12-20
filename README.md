@@ -10,9 +10,11 @@ your node dependencies and their dependencies. Make sure to run `npm install`
 for dependencies.
 
 ## Installation
-`git clone github.com/bgaechter/licesne-helper`
-`cd license-helper`
-`go install`
+```
+git clone github.com/bgaechter/licesne-helper
+cd license-helper
+go install
+```
 
 ## Usage
 simply run `license-helper scan [path]` to look for all package.json files
