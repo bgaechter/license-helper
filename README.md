@@ -1,7 +1,7 @@
 # licence-helper
 
 [![GoDoc](https://godoc.org/github.com/bgaechter/license-helper?status.svg)](https://godoc.org/github.com/bgaechter/license-helper)
-[![Build Status](https://travis-ci.orgbgaechter/license-helper.svg?branch=master)](https://travis-ci.org/bgaechter/license-helper)
+[![Build Status](https://travis-ci.org/bgaechter/license-helper.svg?branch=master)](https://travis-ci.org/bgaechter/license-helper)
 [![Go Report Card](https://goreportcard.com/badge/github.com/bgaechter/license-helper)](https://goreportcard.com/report/github.com/bgaechter/license-helper)
 
 `license-helper` is a little helper tool that helps you find the licenses for
