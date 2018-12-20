@@ -27,7 +27,7 @@ func TestScanDirectory(t *testing.T) {
 		fmt.Println(err)
 		os.Exit(1)
 	}
-	expected := "{Name:request Version:2.88.1 License:Apache-2.0}"
+	expected := "request: Version 2.88.1, License: Apache-2.0"
 
 	testdata := filepath.Join(pwd, "testdata")
 	filepath.Walk(testdata, scanDirectory)
