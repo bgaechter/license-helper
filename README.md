@@ -1,4 +1,4 @@
-# licence-helper
+# license-helper
 
 [![GoDoc](https://godoc.org/github.com/bgaechter/license-helper?status.svg)](https://godoc.org/github.com/bgaechter/license-helper)
 [![Build Status](https://travis-ci.org/bgaechter/license-helper.svg?branch=master)](https://travis-ci.org/bgaechter/license-helper)
