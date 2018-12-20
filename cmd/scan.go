@@ -44,7 +44,7 @@ func scanDirectory(path string, f os.FileInfo, err error) error {
 		if err != nil {
 			fmt.Print(err)
 		}
-		fmt.Printf("%s: Version %s, License: %s \n", dependency.Name, dependency.Version, dependency.License)
+		fmt.Printf("%s: Version %s, License: %s\n", dependency.Name, dependency.Version, dependency.License)
 	}
 	return nil
 }

@@ -6,6 +6,7 @@ import (
 	"io"
 	"os"
 	"path/filepath"
+	"strings"
 	"testing"
 )
 
@@ -27,7 +28,7 @@ func TestScanDirectory(t *testing.T) {
 		fmt.Println(err)
 		os.Exit(1)
 	}
-	expected := "request: Version 2.88.1, License: Apache-2.0"
+	expected := "request: Version 2.88.1, License: Apache-2.0\n"
 
 	testdata := filepath.Join(pwd, "testdata")
 	filepath.Walk(testdata, scanDirectory)
@@ -37,9 +38,9 @@ func TestScanDirectory(t *testing.T) {
 	var buf bytes.Buffer
 	io.Copy(&buf, r)
 
-	t.Log(testdata)
+	t.Log(expected)
 	t.Log(buf.String())
-	if buf.String() != expected {
+	if strings.Compare(expected, buf.String()) != 0 {
 		t.Error("Test Failed")
 	}
 }
